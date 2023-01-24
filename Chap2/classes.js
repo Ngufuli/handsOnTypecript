@@ -1,11 +1,12 @@
 var Person = /** @class */ (function () {
-    function Person() {
+    function Person(msg) {
+        this.msg = msg;
     }
     Person.prototype.speak = function () {
         console.log(this.msg);
     };
     return Person;
 }());
-var Nick = new Person();
-Nick.msg = "Hellow world";
+var Nick = new Person("Hello world");
+// Nick.msg = "Hellow world";
 Nick.speak();
