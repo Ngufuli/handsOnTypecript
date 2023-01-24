@@ -4,3 +4,4 @@ var runner = function (miles) {
     }
     return false;
 };
+console.log(runner(0));
