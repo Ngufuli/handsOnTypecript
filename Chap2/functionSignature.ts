@@ -6,3 +6,5 @@ let runner: Run = function (miles: number): boolean{
     }
     return false;
 }
+
+console.log(runner(0));
