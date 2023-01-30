@@ -10,4 +10,5 @@ class ClassA{
 
 const a = new ClassA();
 //will fail due to `typeName` being static
-console.log(a.typeName);
+ClassA.typeName = "Hello World";
+console.log(ClassA.typeName);    
