@@ -8,5 +8,16 @@ function getEmployee(id){
     }
 }
 
+function getEmployeeWorkInfo(id){
+    return [
+        id,
+        'Office st',
+        'France'
+    ]
+}
+
 const {name: fullname, age} = getEmployee(22);
 console.log('employee', fullname, age);
+console.log('________________________');
+const [id, officeAddress,ct] = getEmployeeWorkInfo(33);
+console.log('employee',ct,id,officeAddress);
