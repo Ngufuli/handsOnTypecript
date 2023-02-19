@@ -1,7 +1,7 @@
 const myPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-        //reslve(`I completed successfully`);
-        reject(`I failed`);
+        resolve(`I completed successfully`);
+        // reject(`I failed`);
     }, 500)
 })
 
