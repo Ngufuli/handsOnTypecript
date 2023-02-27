@@ -14,8 +14,14 @@ export default class Greeting extends React.Component<GreetingProps, GreetingSta
             message: `Hello from ${props.name}`
         }
     }
+    state: GreetingState;
+    static getDerivedStateFromProps(props: GreetingProps, state: GreetingState){
+        console.log(props, state);
+        return state;
+    }
     render(){
-        if(this.props.name){
+        console.log('rendering Greeting');
+        if(!this.props.name){
             return <div>no name given</div>;
         }
         return <div>{this.state.message}</div>
