@@ -15,7 +15,8 @@ class App extends React.Component{
   state: {enteredName: string}
   onChangeName(e: React.ChangeEvent<HTMLInputElement>){
     this.setState({
-      enteredName: e.target.value
+      enteredName: e.target.value,
+      message: `Hello from, ${e.target.value}`
     });
   }
   render(): React.ReactNode {
@@ -25,7 +26,7 @@ class App extends React.Component{
         <header className="App header">
           <img src={logo} className="App-logo" alt='logo'/>
           <input value={this.state.enteredName} onChange={this.onChangeName}/>
-          <Greeting name={this.state.enteredName}/>
+          <Greeting message={this.state.message}/>  
         </header>
       </div>
     )
