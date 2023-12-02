@@ -1,4 +1,6 @@
+import React from "react";
 import logo from './logo.svg';
+import Greeting from "./Greeting";
 import './App.css';
 
 const reducer = (state: any, action: any) => {
@@ -22,4 +24,20 @@ const initialState = {
   message: "",
 };
 
+function App(){
+  const [{message, enteredName}, dispatch] = useReducer(reducer, initialState);
 
+  const onChangeName = (e: React.ChangeEvent<HTMLInputElement>) =>{
+    dispatch ({type: "enteredName", payload: e.target.value});
+  }
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo"/>
+        <input value={enteredName} onChange={onChangeName}/>
+        <Greeting message={message}/>
+      </header>
+    </div>
+  )
+}
