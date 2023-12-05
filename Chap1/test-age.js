@@ -9,6 +9,6 @@ function canDrive(usr) {
 }
 var tom = {
     name: "Tom",
-    age: 20
+    age: 21
 };
 canDrive(tom);

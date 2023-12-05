@@ -1,21 +1,21 @@
-interface User {
-    name: string;
-    age: number;
+interface User{
+    name: string,
+    age: number
 }
 
 function canDrive(usr: User){
-    console.log(`User is `, usr.name);
+    console.log("User is ", usr.name);
 
     if(usr.age >= 16){
-        console.log(`Allow to drive`);
+        console.log("Allow to drive");
     }else{
-        console.log(`Do not allow to drive`);
+        console.log("Do not allow to drive");
     }
 }
 
-const tom = {
+const tom: User = {
     name: "Tom",
-    age: 20
+    age: 21
 }
 
 canDrive(tom);
