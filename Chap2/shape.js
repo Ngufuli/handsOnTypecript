@@ -4,7 +4,7 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 var jill = {
-    name: "jill"
+    name: "Jill"
 };
 var person = jill;
 console.log(person);

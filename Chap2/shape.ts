@@ -1,9 +1,11 @@
 class Person{
     name: string;
 }
+
 const jill: {name: string} = {
-    name: "jill"
-};
+    name: "Jill"
+}
 
 const person: Person = jill;
+
 console.log(person);
