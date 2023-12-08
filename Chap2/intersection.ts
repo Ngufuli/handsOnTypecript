@@ -1,6 +1,5 @@
 let obj: {name: string} & {age: number} = {
-    name: "tom",
+    name: "Nick",
     age: 25
 }
-
 console.log(obj);
