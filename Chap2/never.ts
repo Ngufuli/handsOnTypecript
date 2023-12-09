@@ -1,11 +1,9 @@
-function oldEnough(age: number):never | boolean {
-    if(age>59){
-        throw Error("Too old!");
+function oldEnough(age: number): never | boolean {
+    if(age >= 59){
+        throw Error('Old enought');
     }
-    if (age <= 18){
+    if(age <= 18){
         return false;
     }
     return true;
 }
-
-console.log(oldEnough(26));
