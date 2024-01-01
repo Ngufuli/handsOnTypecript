@@ -1,5 +1,5 @@
 var linda = {
-    name: "Linda",
+    name: 'linda',
     id: 2,
     isManager: false,
     getUniqueId: function () {
@@ -11,16 +11,16 @@ var linda = {
     }
 };
 console.log(linda.getUniqueId());
-var Lucy = {
-    name: "Lucy",
+var pam = {
+    name: 'pam',
     id: 1,
     isManager: true,
     getUniqueId: function () {
-        var uniqueId = Lucy.id + "-" + Lucy.name;
-        if (Lucy.isManager) {
-            return "mgr-" + uniqueId;
+        var uniqueId = pam.id + "-" + pam.name;
+        if (pam.isManager) {
+            return "mrg-" + uniqueId;
         }
         return uniqueId;
     }
 };
-console.log(Lucy.getUniqueId());
+console.log(pam.getUniqueId());
