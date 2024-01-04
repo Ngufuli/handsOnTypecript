@@ -18,7 +18,7 @@ var Vehicle = /** @class */ (function () {
         this.wheelCount = wheelCount;
     }
     Vehicle.prototype.showNumberOfWheels = function () {
-        console.log("moved ".concat(this.wheelCount));
+        console.log("Moved ".concat(this.wheelCount, " miles"));
     };
     return Vehicle;
 }());
