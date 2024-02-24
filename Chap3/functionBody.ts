@@ -1,5 +1,5 @@
 if(true){
-    var val1 = 1;
+    var val1 = 1;   
 }
 
 function go(){
