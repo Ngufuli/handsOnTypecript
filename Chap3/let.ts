@@ -8,5 +8,5 @@ namespace lets{
     }
 
     console.log(val1);
-    console.log(val2);
+    console.log(val2)
 }
