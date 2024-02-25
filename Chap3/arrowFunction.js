@@ -1,5 +1,4 @@
-var myFunc = function (message) {
+var myFunction = function (message) {
     console.log(message);
 };
-var h = "hello universe";
-myFunc(h);
+myFunction('hello world');

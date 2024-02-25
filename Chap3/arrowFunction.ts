@@ -1,6 +1,5 @@
-const myFunc = (message: string): void => {
-    console.log(message);
+const myFunction = (message: string): void => {
+    console.log(message)
 }
 
-let h = "hello universe";
-myFunc(h);
+myFunction('hello world');
