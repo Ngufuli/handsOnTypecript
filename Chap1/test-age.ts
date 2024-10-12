@@ -4,18 +4,18 @@ interface User{
 }
 
 function canDrive(usr: User){
-    console.log("User is ", usr.name);
+    console.log(usr.name);
 
     if(usr.age >= 16){
-        console.log("Allow to drive");
+        console.log(usr.name, " can drive");
     }else{
-        console.log("Do not allow to drive");
+        console.log(usr.name, " can NOT driver")
     }
 }
 
-const tom: User = {
-    name: "Tom",
-    age: 21
+const tom:User = {
+    name: 'Tom',
+    age: 26
 }
 
-canDrive(tom);
+canDrive(tom)
