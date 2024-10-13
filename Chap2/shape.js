@@ -3,8 +3,8 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
-var jill = {
-    name: "Jill"
+var nick = {
+    name: "Nick"
 };
-var person = jill;
+var person = nick;
 console.log(person);

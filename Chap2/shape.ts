@@ -2,10 +2,9 @@ class Person{
     name: string;
 }
 
-const jill: {name: string} = {
-    name: "Jill"
+const nick: {name: string} = {
+    name: "Nick"
 }
 
-const person: Person = jill;
-
-console.log(person);
+const person:Person = nick;
+console.log(person)
