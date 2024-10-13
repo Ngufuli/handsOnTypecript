@@ -1,6 +1,6 @@
-// let val: any = 22;
-// val = "String value";
+// let val:any = 33
+// val = "Hello world";
 // val = new Array();
-// // val.doesnotexist(33);
+// val.doesnotexist(35);
 
 // console.log(val);
