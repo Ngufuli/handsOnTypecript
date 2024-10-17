@@ -1,7 +1,7 @@
-var val = 22;
+var val = 23;
 val = "String value";
 val = new Array();
 if (val instanceof Array) {
-    val.push(33);
+    val.push(35);
 }
 console.log(val);

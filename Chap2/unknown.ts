@@ -1,8 +1,8 @@
-let val: unknown = 22;
+let val: unknown = 23;
 val = "String value";
 val = new Array();
 if(val instanceof Array){
-    val.push(33);
+    val.push(35)
 }
 
 console.log(val);
