@@ -1,4 +1,3 @@
-let unionObje: null | {name: string} = null;
-unionObje = {name: 'Nick'}
-
-console.log(unionObje);
+let unionObj: null | {stock: string} = null
+unionObj = {stock: "NMB Plc"}
+console.log(unionObj)

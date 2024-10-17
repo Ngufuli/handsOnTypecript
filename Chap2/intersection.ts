@@ -1,5 +1,6 @@
-let obj: {name: string} & {age: number} = {
-    name: "Nick",
-    age: 25
+let obj: {name: string} & {price: number} = {
+    name: "CRDB",
+    price: 640
 }
-console.log(obj);
+
+console.log(obj)

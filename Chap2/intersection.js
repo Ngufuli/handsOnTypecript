@@ -1,5 +1,5 @@
 var obj = {
-    name: "Nick",
-    age: 25
+    name: "CRDB",
+    price: 640
 };
 console.log(obj);

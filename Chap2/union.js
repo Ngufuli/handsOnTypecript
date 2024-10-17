@@ -1,3 +1,3 @@
-var unionObje = null;
-unionObje = { name: 'Nick' };
-console.log(unionObje);
+var unionObj = null;
+unionObj = { stock: "NMB Plc" };
+console.log(unionObj);
