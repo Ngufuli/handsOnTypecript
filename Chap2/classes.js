@@ -1,12 +1,11 @@
-var Person = /** @class */ (function () {
-    function Person(msg) {
-        this.msg = msg;
+var Company = /** @class */ (function () {
+    function Company() {
     }
-    Person.prototype.speak = function () {
+    Company.prototype.price = function () {
         console.log(this.msg);
     };
-    return Person;
+    return Company;
 }());
-var tom = new Person("Hellow");
-// tom.msg = "Hello";
-tom.speak();
+var NMB = new Company();
+NMB.msg = "Initial Public Offering at 1000";
+NMB.price();

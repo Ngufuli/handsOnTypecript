@@ -1,12 +1,12 @@
-class Person{
-    constructor(private readonly msg: string){}
+class Company{
+    constructor(){}
+    msg: string;
 
-    speak(){
-        this.msg = "speak " + this.msg;
-        console.log(this.msg);
+    price(){
+        console.log(this.msg)
     }
 }
 
-const tom = new Person("Hellow");
-// tom.msg = "Hello";
-tom.speak();
+const NMB = new Company()
+NMB.msg = "Initial Public Offering at 1000";
+NMB.price();
