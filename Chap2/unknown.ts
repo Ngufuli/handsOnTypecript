@@ -1,8 +1,9 @@
-let val: unknown = 23;
-val = "String value";
+let val: unknown = 11;
+val = "Eleven";
 val = new Array();
+
 if(val instanceof Array){
-    val.push(35)
+    val.push(22)
 }
 
-console.log(val);
+console.log(val)
