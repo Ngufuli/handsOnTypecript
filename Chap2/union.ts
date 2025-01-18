@@ -1,3 +1,5 @@
-let unionObj: null | {stock: string} = null
-unionObj = {stock: "NMB Plc"}
-console.log(unionObj)
+let unionObj: null | {name: string} = null;
+
+unionObj = {name: "CRDB PLC"}
+
+console.log(unionObj);

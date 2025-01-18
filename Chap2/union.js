@@ -1,3 +1,3 @@
 var unionObj = null;
-unionObj = { stock: "NMB Plc" };
+unionObj = { name: "CRDB PLC" };
 console.log(unionObj);
