@@ -2,6 +2,8 @@ var runner = function (miles) {
     if (miles > 10) {
         return true;
     }
-    return false;
+    else {
+        return false;
+    }
 };
-console.log(runner(9));
+console.log(runner(5));
