@@ -1,5 +1,5 @@
-var obj = {
-    name: "CRDB",
-    price: 640
+var myObj = {
+    name: 'Nick',
+    age: 22
 };
-console.log(obj);
+console.log(myObj);
