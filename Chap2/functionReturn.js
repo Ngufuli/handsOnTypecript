@@ -1,13 +1,13 @@
-// function runMore(distance: number): number {
-//     return distance + 10;
+// function addMore(value: number): number {
+//     return value + 50;
 // }
 function eat(calories) {
-    console.log("I eat" + calories + " calories.");
+    console.log("I ate " + calories + " calories of food");
 }
-function sleepIn(hours) {
-    console.log("I slept" + hours + " hours");
+function sleep(hours) {
+    console.log("I slept " + hours + " hours today");
 }
-var ate = eat(100);
-console.log(ate);
-var slept = sleepIn(8);
-console.log(slept);
+var EAT = eat(200);
+console.log(EAT);
+var SLEEP = sleep(8);
+console.log(SLEEP);
