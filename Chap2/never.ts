@@ -1,9 +1,8 @@
-function oldEnough(age: number): never | boolean{
-    if(age > 69){
-        throw("Too old")
-    }
-    if(age < 18){
-        return false;
+function goodEnough(marks: number): never | boolean{
+    if(marks >= 80){
+        throw("Excellent!")
+    }if(marks < 80){
+        return false
     }
     return true;
 }
