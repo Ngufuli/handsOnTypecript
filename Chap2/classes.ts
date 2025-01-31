@@ -1,12 +1,12 @@
-class Company{
-    constructor(private msg: string){}
-    // msg: string;
+class Country{
+    constructor(){}
+    lang: string;
 
-    price(){
-        console.log(this.msg)
+    language(){
+        console.log(this.lang)
     }
 }
 
-const NMB = new Company("IPO offered at 1000/-")
-// NMB.msg = "Initial Public Offering at 1000";
-NMB.price();
+const TZ = new Country;
+TZ.lang = "Swahili";
+TZ.language()

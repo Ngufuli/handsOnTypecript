@@ -1,13 +1,11 @@
-var Company = /** @class */ (function () {
-    function Company(msg) {
-        this.msg = msg;
+var Country = /** @class */ (function () {
+    function Country() {
     }
-    // msg: string;
-    Company.prototype.price = function () {
-        console.log(this.msg);
+    Country.prototype.language = function () {
+        console.log(this.lang);
     };
-    return Company;
+    return Country;
 }());
-var NMB = new Company("IPO offered at 1000/-");
-// NMB.msg = "Initial Public Offering at 1000";
-NMB.price();
+var TZ = new Country;
+TZ.lang = "Swahili";
+TZ.language();
