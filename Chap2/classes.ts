@@ -1,12 +1,12 @@
 class Country{
-    constructor(){}
-    lang: string;
+    constructor(private lang: string){}
+    // lang: string;
 
     language(){
         console.log(this.lang)
     }
 }
 
-const TZ = new Country;
-TZ.lang = "Swahili";
+const TZ = new Country("TANZANIA");
+// TZ.lang = "Swahili";
 TZ.language()

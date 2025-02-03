@@ -6,3 +6,4 @@ function goodEnough(marks: number): never | boolean{
     }
     return true;
 }
+
