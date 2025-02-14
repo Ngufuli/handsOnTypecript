@@ -13,30 +13,30 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Vehicle = /** @class */ (function () {
-    function Vehicle(wheelCount) {
+var Car = /** @class */ (function () {
+    function Car(wheelCount) {
         this.wheelCount = wheelCount;
     }
-    Vehicle.prototype.showNumberOfWheels = function () {
-        console.log("Moved ".concat(this.wheelCount, " miles"));
+    Car.prototype.showNumberOfWheels = function () {
+        console.log("This has moved ".concat(this.wheelCount, " miles."));
     };
-    return Vehicle;
+    return Car;
 }());
-var Motorcycle = /** @class */ (function (_super) {
-    __extends(Motorcycle, _super);
-    function Motorcycle() {
+var Maserati = /** @class */ (function (_super) {
+    __extends(Maserati, _super);
+    function Maserati() {
         return _super.call(this, 2) || this;
     }
-    return Motorcycle;
-}(Vehicle));
-var Automobile = /** @class */ (function (_super) {
-    __extends(Automobile, _super);
-    function Automobile() {
+    return Maserati;
+}(Car));
+var VolvoSemi = /** @class */ (function (_super) {
+    __extends(VolvoSemi, _super);
+    function VolvoSemi() {
         return _super.call(this, 4) || this;
     }
-    return Automobile;
-}(Vehicle));
-var motorCycle = new Motorcycle();
-motorCycle.showNumberOfWheels();
-var autoMobile = new Automobile();
-autoMobile.showNumberOfWheels();
+    return VolvoSemi;
+}(Car));
+var myMaserati = new Maserati();
+myMaserati.showNumberOfWheels();
+var myVolvo = new VolvoSemi();
+myVolvo.showNumberOfWheels();

@@ -1,25 +1,25 @@
-class Vehicle {
-    constructor(private wheelCount: number){}
+class Car {
+    constructor (private wheelCount: number) {}
 
     showNumberOfWheels(){
-        console.log(`Moved ${this.wheelCount} miles`);
+        console.log(`This has moved ${this.wheelCount} miles.`)
     }
 }
 
-class Motorcycle extends Vehicle {
+class Maserati extends Car{
     constructor(){
         super(2)
     }
 }
 
-class Automobile extends Vehicle{
+class VolvoSemi extends Car{
     constructor(){
         super(4)
     }
 }
 
-const motorCycle = new Motorcycle();
-motorCycle.showNumberOfWheels();
+const myMaserati = new Maserati();
+myMaserati.showNumberOfWheels();
 
-const autoMobile = new Automobile();
-autoMobile.showNumberOfWheels();
+const myVolvo = new VolvoSemi();
+myVolvo.showNumberOfWheels();
