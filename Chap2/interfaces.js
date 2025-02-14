@@ -1,26 +1,13 @@
-var linda = {
-    name: 'linda',
-    id: 2,
-    isManager: false,
-    getUniqueId: function () {
-        var uniqueId = linda.id + "-" + linda.name;
-        if (!linda.isManager) {
-            return "emp-" + uniqueId;
+var nick = {
+    name: "Nick",
+    id: 3,
+    isCS: true,
+    getUniqueID: function () {
+        var uniqueid = nick.id + "-" + nick.name;
+        if (!nick.isCS) {
+            return "std-" + uniqueid;
         }
-        return uniqueId;
+        return uniqueid;
     }
 };
-console.log(linda.getUniqueId());
-var pam = {
-    name: 'pam',
-    id: 1,
-    isManager: true,
-    getUniqueId: function () {
-        var uniqueId = pam.id + "-" + pam.name;
-        if (pam.isManager) {
-            return "mrg-" + uniqueId;
-        }
-        return uniqueId;
-    }
-};
-console.log(pam.getUniqueId());
+console.log(nick.getUniqueID());

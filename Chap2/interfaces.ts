@@ -1,34 +1,22 @@
-interface Employee{
+interface Student{
     name: string,
     id: number,
-    isManager: boolean,
-    getUniqueId: () => string;
+    isCS: boolean,
+    getUniqueID: () => string;
 }
 
-const linda: Employee = {
-    name: 'linda',
-    id: 2,
-    isManager: false,
-    getUniqueId: (): string => {
-        let uniqueId = linda.id + "-" + linda.name;
-        if(!linda.isManager){
-            return "emp-" + uniqueId;
-        }
-        return uniqueId;
-    }
-}
-console.log(linda.getUniqueId());
+const nick: Student = {
+    name: "Nick",
+    id:3,
+    isCS: true,
+    getUniqueID: (): string => {
+        let uniqueid = nick.id + "-" + nick.name;
 
-const pam: Employee = {
-    name: 'pam',
-    id: 1,
-    isManager: true,
-    getUniqueId: (): string => {
-        let uniqueId = pam.id + "-" + pam.name;
-        if(pam.isManager){
-            return "mrg-" + uniqueId;
+        if(!nick.isCS){
+            return "std-" + uniqueid;
         }
-        return uniqueId
+        return uniqueid;
     }
 }
-console.log(pam.getUniqueId());
+
+console.log(nick.getUniqueID())
