@@ -1,11 +1,10 @@
-var ClassA = /** @class */ (function () {
-    function ClassA() {
+var myClassA = /** @class */ (function () {
+    function myClassA() {
     }
-    ClassA.getFullName = function () {
-        return "ClassA " + ClassA.typeName;
+    myClassA.getFullName = function () {
+        return "Class A" + myClassA.typeName;
     };
-    ClassA.typeName = "Nick";
-    return ClassA;
+    return myClassA;
 }());
-var a = new ClassA();
-console.log(ClassA.typeName);
+var a = new myClassA();
+console.log(myClassA.getFullName);

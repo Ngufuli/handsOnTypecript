@@ -1,12 +1,13 @@
-class ClassA{
-    static typeName: string = "NicK";
+class myClassA{
+    static typeName: string;
 
     constructor(){}
 
     static getFullName(){
-        return "ClassA " + ClassA.typeName;
+        return "Class A" + myClassA.typeName;
     }
 }
 
-const a = new ClassA();
-console.log(ClassA.typeName);
+const a = new myClassA();
+
+console.log(myClassA.getFullName)
