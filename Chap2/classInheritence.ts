@@ -1,5 +1,5 @@
 class Car {
-    constructor (private wheelCount: number) {}
+    constructor (protected wheelCount: number) {}
 
     showNumberOfWheels(){
         console.log(`This has moved ${this.wheelCount} miles.`)
@@ -9,6 +9,9 @@ class Car {
 class Maserati extends Car{
     constructor(){
         super(2)
+    }
+    updateWheelCount(newWheelCount: number){
+        this.wheelCount = newWheelCount;
     }
 }
 
