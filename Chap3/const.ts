@@ -1,7 +1,7 @@
-namespace constant{
-    const value = 'Andromeda';
-    value = 1;
-    
-    const value1 = [];
-    value1.push('hello')
+namespace constants{
+    const val1 = 1;
+    val1 = 2;
+
+    const val2 = [];
+    val2.push("Hi")
 }
