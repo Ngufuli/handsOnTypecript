@@ -1,10 +1,10 @@
-if(true){
-    var val1 = 1;   
+if (true){
+    var theVal1 = 10;
 }
 
 function go(){
-    var val2 = 2;
+    var theVal2 = 20;
 }
 
-console.log(val1);
-console.log(val2);
+console.log(theVal1);
+console.log(theVal2);
