@@ -1,20 +1,21 @@
-namespace OptionalChaining{
+namespace OptionalChainingNG{
     interface Wheels{
         count?:number;
     }
 
     interface Vehicle{
-        wheels?:Wheels;
+        wheels?: Wheels;
     }
 
-    class Automobile implements Vehicle{
+    class Automibile implements Vehicle{
         constructor(public wheels?: Wheels){}
     }
-    
-    const car: Automobile | null = new Automobile({
+
+    const car: Automibile = new Automibile({
         count: undefined
-    });
-    console.log("car ", car);
-    console.log("wheels ", car?.wheels);
-    console.log("count ", car?.wheels.count);
+    })
+
+    console.log("car" + car);
+    console.log("wheels" + car?.wheels);
+    console.log("count" + car?.wheels?.count)
 }
