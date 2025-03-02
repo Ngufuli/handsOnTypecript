@@ -1,18 +1,22 @@
-class A{
-    name: string = 'A';
+class One {
+    name: string = 'First';
     go(){
-        console.log(this.name);
+        console.log(this.name)
     }
 }
-class B{
-    name: string = 'B';
-    go(){
-        console.log(this.name);
-    }
-}
-const a = new A;
-a.go();
 
-const b = new B;
-b.go = b.go.bind(a);
-b.go();
+class Two{
+    name: string = 'Second';
+    go(){
+        console.log(this.name);
+    }
+}
+
+const eins = new One();
+eins.go();
+
+const twei = new Two();
+twei.go();
+
+twei.go = twei.go.bind(eins);
+twei.go();

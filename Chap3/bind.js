@@ -1,23 +1,24 @@
-var A = /** @class */ (function () {
-    function A() {
-        this.name = 'A';
+var One = /** @class */ (function () {
+    function One() {
+        this.name = 'First';
     }
-    A.prototype.go = function () {
+    One.prototype.go = function () {
         console.log(this.name);
     };
-    return A;
+    return One;
 }());
-var B = /** @class */ (function () {
-    function B() {
-        this.name = 'B';
+var Two = /** @class */ (function () {
+    function Two() {
+        this.name = 'Second';
     }
-    B.prototype.go = function () {
+    Two.prototype.go = function () {
         console.log(this.name);
     };
-    return B;
+    return Two;
 }());
-var a = new A;
-a.go();
-var b = new B;
-b.go = b.go.bind(a);
-b.go();
+var eins = new One();
+eins.go();
+var twei = new Two();
+twei.go();
+twei.go = twei.go.bind(eins);
+twei.go();
