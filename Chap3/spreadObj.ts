@@ -1,20 +1,21 @@
-namespace NamespaceA{
-    class A{
-        aname: string = 'A';
-    }
-    class B{
-        bname: string = 'B';
+namespace Cars{
+    class FourWheeler{
+        w_name: string = "Mercedes"
     }
 
-    const a = new A();
-    const b = new B();
+    class SixWheeler{
+        s_name: string = 'Volvo'
+    }
 
-    const c = {...a, ...b}
-    const d = Object.assign(a, b);
-    console.log(c)
-    console.log(d);
+    const w = new FourWheeler();
+    const f = new SixWheeler();
 
-    a.aname = 'a1';
-    console.log(c);
-    console.log(d);
+    const a = {...w, ...f};
+    const b = Object.assign(w, f);
+    console.log(a);
+    console.log(b);
+
+    w.w_name = 'Beamer';
+    console.log(a);
+    console.log(b);
 }
