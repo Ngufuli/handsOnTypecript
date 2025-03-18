@@ -1,23 +1,12 @@
-function getEmployee(id){
+function getEmployeeId(id){
 
     return {
-        name: 'Nick',
-        age: 35,
-        address: '123 Street',
-        country: 'Unisted State'
+        name: "John Wick",
+        age: 40,
+        address: "1071 W Empire Street",
+        country: "Canada"
     }
 }
 
-function getEmployeeWorkInfo(id){
-    return [
-        id,
-        'Office st',
-        'France'
-    ]
-}
-
-const {name: fullname, age} = getEmployee(22);
-console.log('employee', fullname, age);
-console.log('________________________');
-const [id, officeAddress,ct] = getEmployeeWorkInfo(33);
-console.log('employee',ct,id,officeAddress);
+const {name:fullName, age} = getEmployeeId(30);
+console.log('Employee',fullName,age)
